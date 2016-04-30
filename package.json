@@ -9,22 +9,22 @@
     "prestart": "concurrent \"tsc\"",
     "start": "concurrent \"npm run tsc:w\" \"electron main.js\""
   },
-  "devDependencies": {
-    "electron-prebuilt-compile": "0.37.7",
-    "typescript": "1.8.10",
-    "typings": "0.8.1",
-    "bootstrap": "3.3.6",
-    "concurrently": "1.0.0"
-  },
   "dependencies": {
-    "angular2": "^2.0.0-beta.17",
-    "concurrently": "^1.0.0",
+    "angular2": "2.0.0-beta.14",
     "es6-promise": "3.1.2",
     "es6-shim": "0.35.0",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.6",
     "systemjs": "0.19.24",
-    "zone.js": "0.6.12"
+    "zone.js": "0.6.12",
+    "jquery": "2.2.3"
+  },
+  "devDependencies": {
+    "electron-prebuilt-compile": "0.37.7",
+    "typescript": "1.8.10",
+    "typings": "0.8.1",
+    "bootstrap": "3.3.6",
+    "concurrently": "^1.0.0"
   },
   "license": ""
 }

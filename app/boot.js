@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const browser_1 = require('angular2/platform/browser');
 const core_1 = require('angular2/core');
+const rocket_component_1 = require('./rocket/rocket.component');
 let AppComponent = class AppComponent {
 };
 AppComponent = __decorate([
@@ -20,5 +21,6 @@ AppComponent = __decorate([
     __metadata('design:paramtypes', [])
 ], AppComponent);
 exports.AppComponent = AppComponent;
-browser_1.bootstrap(AppComponent);
+browser_1.bootstrap(rocket_component_1.RocketComponent)
+    .catch((error) => console.error(error));
 //# sourceMappingURL=boot.js.map

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
-  <meta charset="UTF-8">
-  <title>Electron Angular2</title>
-  <link rel="stylesheet" type="text/css" href="app/css/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Electron Angular2</title>
 
-  <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
-  <script src="node_modules/systemjs/dist/system.src.js"></script>
-  <script src="node_modules/rxjs/bundles/Rx.js"></script>
-  <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="./node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="./node_modules/systemjs/dist/system.src.js"></script>
+    <script src="./node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="./node_modules/angular2/bundles/angular2.dev.js"></script>
 
-  <script>
-      System.config({
+    <script>
+        System.config({
           packages: {
               app: {
                   defaultExtension: 'js'
@@ -19,11 +20,18 @@
           }
       });
       System.import('app/boot').then(null, console.error.bind(console));
-  </script>
+    </script>
 
 </head>
+
 <body>
-  <!-- The root of your component heirarchy goes here -->
-  <app></app>
+    <!-- The root of your component heirarchy goes here -->
+    <rocket></rocket>
+
+    <script>
+        window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.js');
+    </script>
+
 </body>
+
 </html>
