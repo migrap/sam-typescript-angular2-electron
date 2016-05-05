@@ -8,15 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require('angular2/core');
-const rocket_actions_1 = require('./rocket.actions');
-const rocket_model_1 = require('./rocket.model');
-const rocket_state_1 = require('./rocket.state');
-const rocket_views_1 = require('./rocket.views');
-const sam_component_1 = require('../sam/sam.component');
-let RocketComponent = class RocketComponent extends sam_component_1.Sam {
+const rocket_exports_1 = require('./rocket.exports');
+let RocketComponent = class RocketComponent extends rocket_exports_1.Sam {
     constructor(loader, elementRef) {
-        super(rocket_actions_1.RocketActions, rocket_model_1.RocketModel, rocket_state_1.RocketState, rocket_views_1.RocketViews);
+        super(rocket_exports_1.RocketActions, rocket_exports_1.RocketModel, rocket_exports_1.RocketState, rocket_exports_1.RocketViews);
         this.loader = loader;
         this.elementRef = elementRef;
         this.actions.init();
@@ -47,12 +42,12 @@ let RocketComponent = class RocketComponent extends sam_component_1.Sam {
     }
 };
 RocketComponent = __decorate([
-    core_1.Component({
+    rocket_exports_1.Component({
         selector: 'rocket',
         templateUrl: './app/rocket/rocket.template.html',
         styleUrls: ['./app/rocket/rocket.style.css']
     }), 
-    __metadata('design:paramtypes', [core_1.DynamicComponentLoader, core_1.ElementRef])
+    __metadata('design:paramtypes', [rocket_exports_1.DynamicComponentLoader, rocket_exports_1.ElementRef])
 ], RocketComponent);
 exports.RocketComponent = RocketComponent;
 //# sourceMappingURL=rocket.component.js.map

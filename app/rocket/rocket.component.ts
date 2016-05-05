@@ -1,9 +1,4 @@
-﻿import { Component, ElementRef, DynamicComponentLoader, ComponentRef } from 'angular2/core';
-import {RocketActions} from './rocket.actions';
-import {RocketModel} from './rocket.model';
-import {RocketState} from './rocket.state';
-import {RocketViews} from './rocket.views';
-import {Sam} from '../sam/sam.component';
+﻿import {Component,ComponentRef,Sam,RocketActions,RocketModel,RocketState,RocketViews,DynamicComponentLoader,ElementRef} from './rocket.exports';
 
 declare var jQuery: any;
 
